@@ -2,7 +2,7 @@
 'use strict';
 
 // Add supported languages for App Store (iTunes)
-// v1.0.0
+// v1.0.1
 // Automatically adds supported languages to your iOS app
 // within the info.plist file after the `prepare` command.
 
