@@ -11,13 +11,13 @@ Since I'm lazy I prefer letting a plugin do this job (avoiding the need to re-ed
 ### Latest published version on npm (with Cordova CLI >= 5.0.0)
 
 ```
-cordova plugin add cordova-plugin-ios-localized-strings --variable MAIN_LANGUAGE=English --variable ADDITIONAL_LANGUAGES=it,fr,de
+cordova plugin add cordova-plugin-ios-localized-strings --variable MAIN_LANGUAGE=English --variable ADDITIONAL_LANGUAGES=it,fr,de --fetch
 ```
 
 ### Latest version from GitHub
 
 ```
-cordova plugin add https://github.com/enricodeleo/cordova-plugin-ios-localized-strings.git --variable MAIN_LANGUAGE=English --variable ADDITIONAL_LANGUAGES=it,fr,de
+cordova plugin add https://github.com/enricodeleo/cordova-plugin-ios-localized-strings.git --variable MAIN_LANGUAGE=English --variable ADDITIONAL_LANGUAGES=it,fr,de --fetch
 ```
 
 ## Platforms

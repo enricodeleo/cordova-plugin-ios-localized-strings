@@ -2,7 +2,7 @@
 'use strict';
 
 // Add supported languages for App Store (iTunes)
-// v1.0.2
+// v1.0.3
 // Automatically adds supported languages to your iOS app
 // within the info.plist file after the `prepare` command.
 
@@ -30,7 +30,7 @@ module.exports = context => {
       process.stdout.write('[iOS] Setting main language to: ' + MAIN_LANGUAGE + '\n');
       infoPlist.CFBundleDevelopmentRegion = MAIN_LANGUAGE;
 
-      if ( ADDITIONAL_LANGUAGES ) {
+      if ( ADDITIONAL_LANGUAGES !== '$ADDITIONAL_LANGUAGES' ) {
         process.stdout.write('[iOS] Setting also additional languagees to: ' + ADDITIONAL_LANGUAGES.split(',') + '\n');
         infoPlist.CFBundleLocalizations = ADDITIONAL_LANGUAGES.split(',');
       }
