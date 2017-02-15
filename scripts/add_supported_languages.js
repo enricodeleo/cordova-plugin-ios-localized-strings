@@ -30,7 +30,7 @@ module.exports = context => {
       process.stdout.write('[iOS] Setting main language to: ' + MAIN_LANGUAGE + '\n');
       infoPlist.CFBundleDevelopmentRegion = MAIN_LANGUAGE;
 
-      if ( ADDITIONAL_LANGUAGES !== '$ADDITIONAL_LANGUAGES' ) {
+      if ( ADDITIONAL_LANGUAGES && Array.isArray(ADDITIONAL_LANGUAGES) ) {
         process.stdout.write('[iOS] Setting also additional languagees to: ' + ADDITIONAL_LANGUAGES.split(',') + '\n');
         infoPlist.CFBundleLocalizations = ADDITIONAL_LANGUAGES.split(',');
       }
