@@ -36,7 +36,7 @@
     "url": "https://github.com/enricodeleo/cordova-plugin-ios-localized-strings/issues"
   },
   "homepage": "https://github.com/enricodeleo/cordova-plugin-ios-localized-strings#readme",
-  "devDependencies": {
+  "dependencies": {
     "plist": "^2.0.1"
   }
 }
