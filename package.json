@@ -1,0 +1,42 @@
+{
+  "name": "cordova-plugin-ios-localized-strings",
+  "version": "1.0.0",
+  "author": "Enrico Deleo <hello@enricodeleo.com> (http://enricodeleo.com/)",
+  "description": "Cordova / PhoneGap Plugin that exposes supported languages to the App Store (iTunes).",
+  "cordova": {
+    "id": "cordova-plugin-ios-localized-strings",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enricodeleo/cordova-plugin-ios-localized-strings.git"
+  },
+  "keywords": [
+    "cordova",
+    "ios",
+    "app",
+    "languages",
+    "i18n",
+    "appstore",
+    "itunes",
+    "strings",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enricodeleo/cordova-plugin-ios-localized-strings/issues"
+  },
+  "homepage": "https://github.com/enricodeleo/cordova-plugin-ios-localized-strings#readme",
+  "devDependencies": {
+    "plist": "^2.0.1"
+  }
+}
