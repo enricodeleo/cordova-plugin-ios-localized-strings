@@ -12,7 +12,6 @@
   <platform name="ios">
 
     <preference name="MAIN_LANGUAGE" />
-    <preference name="ADDITIONAL_LANGUAGES" />
 
     <config-file target="config.xml" parent="/*">
       <preference name="MAIN_LANGUAGE" value="$MAIN_LANGUAGE"/>
