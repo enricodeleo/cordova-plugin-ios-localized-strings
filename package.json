@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-ios-localized-strings",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Enrico Deleo <hello@enricodeleo.com> (http://enricodeleo.com/)",
   "description": "Cordova / PhoneGap Plugin that exposes supported languages to the App Store (iTunes).",
   "cordova": {
