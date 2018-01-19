@@ -22,9 +22,7 @@ module.exports = context => {
     let plistPath = path.join(context.opts.projectRoot, 'platforms', 'ios', name, `${name}-Info.plist`);
 
     fs.readFile(plistPath, 'utf-8', (err, data) => {
-      if (err) {
-        return reject(err);
-      }
+      if (err) return reject(err);
       let infoPlist = plist.parse(data);
 
       process.stdout.write('[iOS] Setting main language to: ' + MAIN_LANGUAGE + '\n');
@@ -34,9 +32,7 @@ module.exports = context => {
       infoPlist.CFBundleLocalizations = ADDITIONAL_LANGUAGES.split(',');
 
       fs.writeFile(plistPath, plist.build(infoPlist), err => {
-        if (err) {
-          return reject();
-        }
+        if (err) return reject();
         resolve();
       });
     });
